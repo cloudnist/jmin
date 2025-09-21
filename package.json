@@ -1,0 +1,58 @@
+{
+  "name": "jmin",
+  "version": "1.0.0",
+  "description": "Stream-based JSON token transformer with customizable key mapping and quote-safe parsing.",
+  "license": "MIT",
+  "homepage": "https://docs.cloudnist.com/jmin",
+  "bugs": {
+    "url": "https://github.com/cloudnist/jmin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudnist/jmin.git"
+  },
+  "sideEffects": false,
+  "author": "Cloudnist",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "jmin",
+    "json",
+    "transform",
+    "stream",
+    "token",
+    "parser",
+    "minify",
+    "replace",
+    "keymap",
+    "obfuscate",
+    "escape",
+    "quotes",
+    "javascript",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.1",
+    "tsdown": "^0.15.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
